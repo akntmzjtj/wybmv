@@ -62,17 +62,13 @@ buttonYes.addEventListener("click", () => {
   count = 0
 })
 
-const imageChange = document.querySelector("#image-change")
+const images = document.querySelectorAll("#image-container>img")
 const textChange = document.querySelector("#text-change")
 
 index = 0
 function cycleImage() {
   // List of images
-  let imagesList = [
-    "./assets/cycle/cat-sad-one.jpeg",
-    "./assets/cycle/cat-sad-two.jpeg",
-    "./assets/cycle/cat-crying.jpeg",
-  ]
+  imagesArray = Array.from(images)
 
   let textList = [
     "Please, will you be my valentine?",
@@ -80,8 +76,14 @@ function cycleImage() {
     "I'm down on my knees, PLEASE",
   ]
 
-  if (index < imagesList.length) {
-    imageChange.setAttribute("src", imagesList[index])
+  if (index < imagesArray.length) {
+    if (imagesArray[index].classList.contains("block")) {
+      imagesArray[index].classList.replace("block", "hidden")
+    }
+    imagesArray[index + 1].classList.replace("hidden", "block")
+  }
+
+  if (index < textList.length) {
     textChange.textContent = textList[index]
   }
   index++
