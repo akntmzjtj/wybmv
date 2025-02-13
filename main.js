@@ -75,8 +75,8 @@ function cycleImage() {
   ]
 
   let textList = [
-    "Please, will you be my Valentine?",
-    "Pretty PLEASE, will you be my Valentine?",
+    "Please, will you be my valentine?",
+    "Pretty PLEASE, will you be my valentine?",
     "I'm down on my knees, PLEASE",
   ]
 
