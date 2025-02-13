@@ -4,7 +4,8 @@
     "tailwindcss": "^4.0.3"
   },
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css"
   },
   "devDependencies": {
     "prettier": "^3.4.2",
@@ -21,19 +22,5 @@
     "plugins": [
       "prettier-plugin-tailwindcss"
     ]
-  },
-  "name": "wybmv",
-  "version": "1.0.0",
-  "main": "main.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/akntmzjtj/wybmv.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/akntmzjtj/wybmv/issues"
-  },
-  "homepage": "https://github.com/akntmzjtj/wybmv#readme",
-  "description": ""
+  }
 }
