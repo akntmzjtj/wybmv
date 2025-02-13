@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Atma", serif;
+}
+
+@layer components {
+  img {
+    @apply size-72 rounded-3xl object-cover sm:size-76;
+  }
+
+  button {
+    @apply box-border rounded-xl px-8 py-4 text-xl font-bold text-white;
+  }
+
+  .button-user {
+    @apply hover:shadow-md hover:shadow-gray-800 active:shadow-lg;
+    /* @apply transition-all duration-200 ease-out; */
+  }
+
+  .button-next {
+    @apply size-24 p-4 ring-2 ring-black;
+    @apply transition-all duration-200 ease-in-out hover:p-2 active:p-1;
+  }
+
+  .slide {
+    @apply flex h-full w-full snap-center flex-col items-center justify-start;
+  }
+
+  .main-text {
+    @apply text-center text-3xl font-bold sm:text-5xl;
+  }
+
+  .button-yes-count-1 {
+    @apply px-12 py-6 text-2xl;
+  }
+
+  .button-yes-count-2 {
+    @apply px-18 py-9 text-3xl;
+  }
+
+  .button-yes-count-3 {
+    @apply px-27 py-13.5 text-4xl;
+  }
+
+  /* button yes full screen */
+  .button-yes-fullscreen {
+    @apply absolute top-0 left-0 h-full w-full rounded-none text-9xl;
+  }
+}

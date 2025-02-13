@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <script src="./main.js" defer></script>
+    <title>wybmv</title>
+  </head>
+  <body class="m-0">
+    <div
+      class="h-svh w-full snap-y snap-mandatory overflow-hidden *:odd:bg-red-100 *:even:bg-pink-100">
+      <div class="slide">
+        <div class="flex flex-1 items-center">
+          <img src="./assets/hanni-rizz.gif" />
+        </div>
+        <div class="flex flex-1 flex-col justify-between p-4 sm:p-0 sm:pb-8">
+          <div class="main-text">Hey there, cutie patootie</div>
+
+          <!-- Next Slide Button -->
+          <div class="flex justify-center">
+            <a href="#slide-02">
+              <button class="button-next">
+                <img class="h-full w-full" src="./assets/arrow-down.svg" />
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="slide-02" class="slide">
+        <div class="flex flex-1 items-center">
+          <img src="./assets/jb-rizz-one.jpeg" />
+        </div>
+        <div class="flex flex-1 flex-col gap-12">
+          <div class="main-text">How are you going today?</div>
+
+          <!-- Buttons -->
+          <div
+            id="button-swag-container"
+            class="flex justify-center gap-16 p-4 sm:p-0">
+            <a href="#slide-03" class="flex-1">
+              <button class="button-user w-full bg-green-600">VERY SWAG</button>
+            </a>
+            <a href="#slide-03" class="flex-1">
+              <button class="button-user w-full bg-red-400">
+                NOT VERY SWAG
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="slide-03" class="slide">
+        <div class="flex flex-1 items-center">
+          <img src="./assets/jb-rizz-two.jpeg" />
+        </div>
+        <div class="flex flex-1 flex-col justify-between p-4 sm:p-0">
+          <div class="main-text">
+            <div>
+              Oh,
+              <div
+                id="slide-02-user-input"
+                class="inline bg-linear-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent"></div>
+              ?
+            </div>
+            <div>That's good to hear!</div>
+          </div>
+
+          <!-- Next Slide Button -->
+          <div class="flex justify-center pb-8">
+            <a href="#slide-04">
+              <button class="button-next">
+                <img class="h-full w-full" src="./assets/arrow-down.svg" />
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="slide-04" class="slide">
+        <div class="flex flex-1 items-center">
+          <img src="./assets/cat-nerd.jpeg" />
+        </div>
+        <div class="flex flex-1 flex-col justify-between p-4 sm:p-0 sm:pb-8">
+          <div class="main-text">Can I ask you one question?</div>
+
+          <!-- Next Slide Button -->
+          <div class="flex justify-center">
+            <a href="#slide-05">
+              <button class="button-next">
+                <img class="h-full w-full" src="./assets/arrow-down.svg" />
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="slide-05" class="slide">
+        <!-- Image -->
+        <div class="flex flex-1 items-center">
+          <img id="image-change" src="./assets/cat-rizz.jpeg" />
+        </div>
+
+        <div class="flex flex-1 flex-col gap-12">
+          <div id="text-change" class="main-text">
+            Will you be my Valentine?
+          </div>
+
+          <!-- Yes Or No -->
+          <div
+            class="flex flex-wrap items-center justify-center gap-8 p-4 sm:gap-16 sm:p-0">
+            <a href="#slide-final">
+              <button id="button-yes" class="button-user bg-green-600">
+                YES
+              </button>
+            </a>
+            <div>
+              <button id="button-no" class="button-user bg-red-400">NO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="slide-final" class="slide">
+        <!-- Image -->
+        <div class="flex flex-1 items-center">
+          <img src="./assets/cat-smirk.jpeg" />
+        </div>
+
+        <div class="flex flex-1 flex-col justify-center gap-12">
+          <div class="main-text animate-bounce">YIPPIEEE!!!</div>
+          <div class="main-text animate-spin">😍😍😍</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
